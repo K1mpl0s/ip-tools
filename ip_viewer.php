@@ -7,7 +7,7 @@
     //Parse the json as $parse
     $parse = unserialize($json);
     //return results.
-    echo '<p class="ip-info">IP: ' . $parse["query"] . "<br>ISP: " . $parse["isp"] . "<br>Country: " . $parse["country"] . "<br>State: " . $parse["regionName"] . "</p>";
+    echo '<p class="ip-info">IP: ' . $parse['query'] . "<br>ISP: " . $parse['isp'] . "<br>Country: " . $parse['country'] . "<br>State: " . $parse['regionName'] . "</p>";
     //include user-agent. 
     echo '<p class="user-agent">' . $_SERVER['HTTP_USER_AGENT'] . '</p>';
     ?>
